@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            
+        }
+        #parent{
+            border: 2px solid black;
+            width: fit-content;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        #p1{
+            color: brown;
+            text-align: center;
+            text-decoration: underline;
+
+        }
+        #result{
+            font-size: 30px;
+        }
+        #guessinput{
+            border-radius: 15px;
+            padding: 15px;
+            border: 2px solid black;
+            background-color: rgb(15, 235, 216);
+        }
+        #ch{
+            border-radius: 15px;
+            border: 2px solid black;
+            padding: 15px;
+            width: 40%;
+            background-color: rgb(127, 240, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <h1 id="p1">Guess a Number between 1-20</h1>
+        <h2 id="result">Enter Number to Guess.</h2>
+        <input type="number" id="guessinput" placeholder="Enter Your Number" >
+        <button onclick="checkguess()" id="ch">Enter</button>
+        <h3 id="attempts">Number Of Attempts is:0</h3>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
